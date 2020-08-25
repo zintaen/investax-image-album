@@ -1,0 +1,77 @@
+.container {
+  margin: 40px 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.field {
+  border: none;
+  outline: none;
+  background: transparent;
+  display: flex;
+  align-items:center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .3s ease;
+  margin: 0 6px;
+}
+
+.field:hover,
+.field:focus,
+.field:active {
+  color: #4f4f4f;
+  border: none;
+  outline: none;
+}
+
+.field svg {
+  margin-right: 8px;
+}
+
+.button {
+  position: relative;
+  padding: 6px;
+}
+
+.button:after {
+  content: "|";
+  position: absolute;
+  top: 5px;
+  right: -9px;
+}
+
+.delete {
+  border-radius: 4px;
+  background-color: #eee;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .actions {
+    margin-top: 0;
+  }
+
+  .button {
+    padding: 8px;
+  }
+
+  .button:after {
+    top: 7px;
+    right: -16px;
+  }
+
+  .field {
+    margin: 0 12px;
+  }
+}

@@ -1,0 +1,29 @@
+.wrapper {
+  flex-basis: 50%;
+  width: 50%;
+}
+
+.col {
+  padding: 15px 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    flex-basis: 33.33%;
+    width:  33.33%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .wrapper {
+    flex-basis: 25%;
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    flex-basis: 20%;
+    width: 20%;
+  }
+}
